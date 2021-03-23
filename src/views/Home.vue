@@ -17,11 +17,16 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-
+import { onMounted } from "vue";
 export default {
   name: "Home",
   components: {
     HelloWorld,
+  },
+  setup(props, context) {
+    onMounted(() => {
+      console.log("hello world");
+    });
   },
 };
 </script>
