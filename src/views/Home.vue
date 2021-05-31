@@ -26,7 +26,9 @@ export default {
   setup(props, context) {
     onMounted(() => {
       console.log("hello world");
+      console.log(context)
     });
+    console.log(...arguments)
   },
 };
 </script>

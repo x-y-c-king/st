@@ -3,7 +3,7 @@ module.exports = {
   pages: {
     index: {
       entry: 'src/main.js',
-      title: 'title', //放要改的title名
+      title: '设计', //放要改的title名
     },
   },
   css: {
@@ -23,7 +23,7 @@ module.exports = {
     }
   },
   devServer: {
-    port: '8080',
+    port: '80',
     open: true,
     proxy: {
       '/api': {
